@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎈 UP: La Gran Aventura 🎈</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to top, #87CEEB, #E0F7FA);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            padding: 20px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            position: relative;
+        }
+        .balloons {
+            width: 100px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #FF6F61;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #FF6F61;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #E64A45;
+        }
+        .details {
+            margin-top: 20px;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .footer-msg {
+            margin-top: 30px;
+            font-style: italic;
+            color: #777;
+        }
+        .clouds {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100px;
+            opacity: 0.3;
+            animation: drift 10s linear infinite;
+        }
+        @keyframes drift {
+            from { transform: translateX(-50px); }
+            to { transform: translateX(100vw); }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.imgur.com/EBQxEwK.png" alt="Globos" class="balloons">
+    <div class="container">
+        <img src="https://i.imgur.com/Uc6yKJv.png" alt="Casa con globos" class="clouds">
+        <div class="title">🎈 UP: La Gran Aventura 🎈</div>
+        <div class="subtitle">¡Has desbloqueado una nueva misión!</div>
+        <div class="details">
+            <p><strong>🎯 Misión:</strong> Explorar el Paraíso de Diversión</p>
+            <p><strong>📅 Fecha:</strong> [Fecha del evento]</p>
+            <p><strong>⏰ Hora:</strong> [Hora del evento]</p>
+            <p><strong>📍 Lugar:</strong> [Dirección del evento]</p>
+            <p><strong>⭐ Nivel de dificultad:</strong> ★☆☆☆☆ (Diversión garantizada)</p>
+        </div>
+        <a href="#" class="button">🎮 Iniciar Aventura</a>
+        <div class="footer-msg">*Presiona "Iniciar Aventura" para un día inolvidable.*</div>
+    </div>
+</body>
+</html>
